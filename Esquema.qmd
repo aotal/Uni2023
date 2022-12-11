@@ -1,0 +1,56 @@
+---
+title: Reconstrucción de Aplicadores
+subtitle: Braquiterapia Intersticial en tumores de Cérvix sobre MRI
+author: Antonio Otal Palacín
+institute: Hospital Universitari Arnau de Vilanova (LLeida)
+format: 
+    revealjs:
+        logo: irimed.png
+        footer: "[IRIMED](http://www.uv.es/radiofisica/index.html)"
+        css: styles.css
+---
+
+
+## Sumario
+
+- Braquiterapia ginecológica HEB 
+- Modalidades de imagen: CT vs MRI
+- Fases del tratamiento
+
+    
+
+## Braquiterapia ginecológica
+
+- Braquiterapia vs Teleterapia 
+- Localizaciones 
+- Diferencias entre braquiterapia intracavitaria e intersticial
+- Braquiterapia de alta tasa y alta energía
+
+## ¿Qué es la braquiterapia?
+
+::: {.notes}
+Brachytherapy, also known as internal radiation therapy, is a type of radiation therapy in which a radioactive substance is placed inside or directly next to the area requiring treatment. This allows for a high dose of radiation to be delivered to the tumor or other affected tissue, while minimizing exposure to healthy surrounding tissue. Brachytherapy is often used to treat cancers of the prostate, breast, cervix, and head and neck. It can also be used to treat other conditions, such as non-melanoma skin cancer and gynecological disorders.
+:::
+
+## Modalidades de imagen
+
+- El uso de la imagen en braquiterapia
+- Braquiterapia guiada por CT
+- El paso a la MRI: razones
+- Registro de imágenes
+- Braquiterapia exclusiva guiada por MRI
+
+## Fases del tratamiento
+
+- Contorneo
+- Reconstrucción
+- Dosimetría
+- Aplicación del tratamiento
+
+
+
+
+::: {.notes}
+Brachytherapy, also known as internal radiation therapy, is a type of radiation therapy in which a radioactive substance is placed inside or directly next to the area requiring treatment. This allows for a high dose of radiation to be delivered to the tumor or other affected tissue, while minimizing exposure to healthy surrounding tissue. Brachytherapy is often used to treat cancers of the prostate, breast, cervix, and head and neck. It can also be used to treat other conditions, such as non-melanoma skin cancer and gynecological disorders.
+:::
+
