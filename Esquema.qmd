@@ -15,7 +15,7 @@ format:
 
 - Braquiterapia ginecológica HEB 
 - Modalidades de imagen: CT vs MRI
-- Fases del tratamiento
+- Reconstrucción de aplicadores
 
     
 
@@ -23,10 +23,15 @@ format:
 
 - Braquiterapia vs Teleterapia 
 - Localizaciones 
+- Planes en braquiterapia
+
+    - Contorneo
+    - Reconstrucción
+    - Dosimetría
+    - Aplicación del tratamiento
+
 - Diferencias entre braquiterapia intracavitaria e intersticial
 - Braquiterapia de alta tasa y alta energía
-
-## ¿Qué es la braquiterapia?
 
 ::: {.notes}
 Brachytherapy, also known as internal radiation therapy, is a type of radiation therapy in which a radioactive substance is placed inside or directly next to the area requiring treatment. This allows for a high dose of radiation to be delivered to the tumor or other affected tissue, while minimizing exposure to healthy surrounding tissue. Brachytherapy is often used to treat cancers of the prostate, breast, cervix, and head and neck. It can also be used to treat other conditions, such as non-melanoma skin cancer and gynecological disorders.
@@ -40,17 +45,18 @@ Brachytherapy, also known as internal radiation therapy, is a type of radiation 
 - Registro de imágenes
 - Braquiterapia exclusiva guiada por MRI
 
-## Fases del tratamiento
+## Reconstrucción de aplicadores
 
-- Contorneo
-- Reconstrucción
-- Dosimetría
-- Aplicación del tratamiento
+- Introducción y definición (aunque ya estará definido en el primer bloque)
+- Reconstrucción directa: Pros y contras
+- Reconstrucción mediante librerías
+- Limitaciones de la reconstrucción mediante librerías
 
+## Aplicadores con parte intersticial
 
+- Nos ceñiremos a los compatibles en resonancia
+- Aplicadores plásticos
+- Aplicadores de metálicos (titanio)
 
-
-::: {.notes}
-Brachytherapy, also known as internal radiation therapy, is a type of radiation therapy in which a radioactive substance is placed inside or directly next to the area requiring treatment. This allows for a high dose of radiation to be delivered to the tumor or other affected tissue, while minimizing exposure to healthy surrounding tissue. Brachytherapy is often used to treat cancers of the prostate, breast, cervix, and head and neck. It can also be used to treat other conditions, such as non-melanoma skin cancer and gynecological disorders.
-:::
+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
 
