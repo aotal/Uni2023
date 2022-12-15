@@ -7,7 +7,7 @@
 <link href="Esquema_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="Esquema_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="Esquema_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.1.251">
+  <meta name="generator" content="quarto-1.2.269">
 
   <meta name="author" content="Antonio Otal Palacín">
   <title>Reconstrucción de Aplicadores</title>
@@ -324,32 +324,45 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="center">
+<section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Reconstrucción de Aplicadores</h1>
   <p class="subtitle">Braquiterapia Intersticial en tumores de Cérvix sobre MRI</p>
-  <p class="author">Antonio Otal Palacín</p>
-  <p class="institute">Hospital Universitari Arnau de Vilanova (LLeida)</p>
-</section>
 
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Antonio Otal Palacín 
+</div>
+        <p class="quarto-title-affiliation">
+            Hospital Universitari Arnau de Vilanova (LLeida)
+          </p>
+    </div>
+</div>
+
+</section>
 <section id="sumario" class="slide level2">
 <h2>Sumario</h2>
 <ul>
 <li>Braquiterapia ginecológica HEB</li>
 <li>Modalidades de imagen: CT vs MRI</li>
-<li>Fases del tratamiento</li>
+<li>Reconstrucción de aplicadores</li>
 </ul>
 </section>
 <section id="braquiterapia-ginecológica" class="slide level2">
 <h2>Braquiterapia ginecológica</h2>
 <ul>
-<li>Braquiterapia vs Teleterapia</li>
-<li>Localizaciones</li>
-<li>Diferencias entre braquiterapia intracavitaria e intersticial</li>
-<li>Braquiterapia de alta tasa y alta energía</li>
+<li><p>Braquiterapia vs Teleterapia</p></li>
+<li><p>Localizaciones</p></li>
+<li><p>Planes en braquiterapia</p>
+<ul>
+<li>Contorneo</li>
+<li>Reconstrucción</li>
+<li>Dosimetría</li>
+<li>Aplicación del tratamiento</li>
+</ul></li>
+<li><p>Diferencias entre braquiterapia intracavitaria e intersticial</p></li>
+<li><p>Braquiterapia de alta tasa y alta energía</p></li>
 </ul>
-</section>
-<section id="qué-es-la-braquiterapia" class="slide level2">
-<h2>¿Qué es la braquiterapia?</h2>
 <aside class="notes">
 <p>Brachytherapy, also known as internal radiation therapy, is a type of radiation therapy in which a radioactive substance is placed inside or directly next to the area requiring treatment. This allows for a high dose of radiation to be delivered to the tumor or other affected tissue, while minimizing exposure to healthy surrounding tissue. Brachytherapy is often used to treat cancers of the prostate, breast, cervix, and head and neck. It can also be used to treat other conditions, such as non-melanoma skin cancer and gynecological disorders.</p>
 <style type="text/css">
@@ -374,27 +387,23 @@
 <li>Braquiterapia exclusiva guiada por MRI</li>
 </ul>
 </section>
-<section id="fases-del-tratamiento" class="slide level2">
-<h2>Fases del tratamiento</h2>
+<section id="reconstrucción-de-aplicadores" class="slide level2">
+<h2>Reconstrucción de aplicadores</h2>
 <ul>
-<li>Contorneo</li>
-<li>Reconstrucción</li>
-<li>Dosimetría</li>
-<li>Aplicación del tratamiento</li>
+<li>Introducción y definición (aunque ya estará definido en el primer bloque)</li>
+<li>Reconstrucción directa: Pros y contras</li>
+<li>Reconstrucción mediante librerías</li>
+<li>Limitaciones de la reconstrucción mediante librerías</li>
 </ul>
-<aside class="notes">
-<p>Brachytherapy, also known as internal radiation therapy, is a type of radiation therapy in which a radioactive substance is placed inside or directly next to the area requiring treatment. This allows for a high dose of radiation to be delivered to the tumor or other affected tissue, while minimizing exposure to healthy surrounding tissue. Brachytherapy is often used to treat cancers of the prostate, breast, cervix, and head and neck. It can also be used to treat other conditions, such as non-melanoma skin cancer and gynecological disorders.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+</section>
+<section id="aplicadores-con-parte-intersticial" class="slide level2">
+<h2>Aplicadores con parte intersticial</h2>
+<ul>
+<li>Nos ceñiremos a los compatibles en resonancia</li>
+<li>Aplicadores plásticos</li>
+<li>Aplicadores de metálicos (titanio)</li>
+</ul>
+<p>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</p>
 
 <img src="irimed.png" class="slide-logo r-stretch"><div class="footer footer-default">
 <p><a href="http://www.uv.es/radiofisica/index.html">IRIMED</a></p>
@@ -649,7 +658,24 @@
         button.classList.add('code-copy-button-checked');
         var currentTitle = button.getAttribute("title");
         button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
         setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
           button.setAttribute("title", currentTitle);
           button.classList.remove('code-copy-button-checked');
         }, 1000);
@@ -687,24 +713,42 @@
           return note.innerHTML;
         });
       }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
       var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
       for (var i=0; i<bibliorefs.length; i++) {
         const ref = bibliorefs[i];
-        const cites = ref.parentNode.getAttribute('data-cites').split(' ');
-        tippyHover(ref, function() {
-          var popup = window.document.createElement('div');
-          cites.forEach(function(cite) {
-            var citeDiv = window.document.createElement('div');
-            citeDiv.classList.add('hanging-indent');
-            citeDiv.classList.add('csl-entry');
-            var biblioDiv = window.document.getElementById('ref-' + cite);
-            if (biblioDiv) {
-              citeDiv.innerHTML = biblioDiv.innerHTML;
-            }
-            popup.appendChild(citeDiv);
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
           });
-          return popup.innerHTML;
-        });
+        }
       }
     });
     </script>
