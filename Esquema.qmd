@@ -16,6 +16,8 @@ format:
 - Braquiterapia ginecológica HEB 
 - Modalidades de imagen: CT vs MRI
 - Reconstrucción de aplicadores
+    - Aplicadores con parte intersticial
+    - Planes virtuales
 
     
 
@@ -58,3 +60,7 @@ Brachytherapy, also known as internal radiation therapy, is a type of radiation 
 - Aplicadores plásticos
 - Aplicadores de metálicos (titanio)
 
+## Planes Virtuales
+
+- Presentación del problema
+- El aplicador Benidorm
