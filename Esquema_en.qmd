@@ -1,5 +1,5 @@
 ---
-title: Applicator Reconstruction in Cervical Tumors on MRI
+title: Applicator Reconstruction in Gynecological Brachytherapy on MRI
 subtitle: Interstitial Brachytherapy and Applicators Libraries
 author: "[Antonio Otal Palacín](aotalpalacin@gmail.com)"
 institute: Hospital Universitari Arnau de Vilanova (Lleida)
@@ -8,24 +8,41 @@ format:
         logo: irimed.png
         footer: "[IRIMED](http://www.uv.es/radiofisica/index.html)"
         css: styles.css
+jupyter: quarto       
 ---
 
 ## Summary
 
-- Gynecological Brachytherapy HEB 
+- Gynecological Brachytherapy
 - Imaging modalities: CT vs MRI
 - Applicator reconstruction
     - Applicators with interstitial part
-    - Virtual planning
+- Virtual planning
 ![](img/summary.png){.absolute top=100 right=10 width="300" height="300"}
+
+::: {.notes}
+Notes
+:::
 
 # Gynecological Brachytherapy
 
 ![](img/BraquiGine.png){.absolute top=0 right=50 width="300" height="300"}
 
-## Brachytherapy vs External Beam Radiotherapy
+::: {.notes}
+Notes
+:::
+
+## Brachytherapy vs External Beam Radiotherapy (Tele-therapy)
+
+::: {.notes}
+Notes
+:::
 
 ## Locations 
+
+::: {.notes}
+Notes
+:::
 
 ## Brachytherapy workflow
 - Contouring
@@ -33,51 +50,172 @@ format:
 - Dosimetry
 - Treatment delivery
 
+::: {.notes}
+Notes
+:::
+
+## Brachytherapy workflow: Contouring
+
+::: {.notes}
+Notes
+:::
+
+## Brachytherapy workflow: Reconstruction
+
+::: {.notes}
+Notes
+:::
+
+## Brachytherapy workflow: Dosimetry
+
+::: {.notes}
+Notes
+:::
+
+## Brachytherapy workflow: Treatment delivery
+
+::: {.notes}
+Notes
+:::
+
 ## Differences between intracavitary and interstitial brachytherapy
+
+::: {.notes}
+Notes
+:::
+
 ## High-dose-rate and high-energy brachytherapy
 
 ::: {.notes}
 Brachytherapy, also known as internal radiation therapy, is a type of radiation therapy in which a radioactive substance is placed inside or directly next to the area requiring treatment. This allows for a high dose of radiation to be delivered to the tumor or other affected tissue, while minimizing exposure to healthy surrounding tissue. Brachytherapy is often used to treat cancers of the prostate, breast, cervix, and head and neck. It can also be used to treat other conditions, such as non-melanoma skin cancer and gynecological disorders.
 :::
 
-# Imaging <br> Modalities
+# Imaging <br> Modalities: <br> CT vs MRI
 
 ![](img/OldTV.jpg){.absolute top=0 right=75}
+
+::: {.notes}
+Notes
+:::
 
 
 ## The use of imaging in brachytherapy
 
+```{python}
+import trimesh
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.path import Path
+ImagenEntrada=trimesh.load('OD20_0.stl')
+ImagenEntrada.show()
+```
+
+::: {.notes}
+Notes
+:::
+
 ## CT-guided brachytherapy
+
+::: {.notes}
+Notes
+:::
 
 ## Transition to MRI
 
+::: {.notes}
+Notes
+:::
+
 ## Image registration
 
+::: {.notes}
+Notes
+:::
+
 ## MRI-guided exclusive brachytherapy
+
+::: {.notes}
+Notes
+:::
 
 # Applicator Reconstruction
 
 ![](img/AppReconstruction.png){.absolute bottom=10 right=0 width="350" height="350"}
 
-## Introduction and definition (although it will already be defined in the first section)
+::: {.notes}
+Notes
+:::
+
+## Introduction and definition 
+
+::: {.notes}
+Notes
+:::
 
 ## Direct reconstruction: Pros and cons
 
+::: {.notes}
+Notes
+:::
+
 ## Dummies
+
+::: {.notes}
+Notes
+:::
 
 ## Reconstruction using libraries
 
+::: {.notes}
+Notes
+:::
+
 ## Limitations of reconstruction using libraries
+
+::: {.notes}
+Notes
+:::
 
 ## Applicators with Interstitial Part
 
+::: {.notes}
+Notes
+:::
+
 ## Focus on MRI-compatible applicators
+
+::: {.notes}
+Notes
+:::
+
 ## Plastic applicators
+
+::: {.notes}
+Notes
+:::
+
 ## Metallic applicators (titanium)
 
+::: {.notes}
+Notes
+:::
 
-# Virtual Planning
+# Virtual <br> Planning 
+
+![](img/Virtual.png){.absolute bottom=10 right=0 width="350" height="350"}
+
+::: {.notes}
+Notes
+:::
 
 ## Presentation of the problem
 
+::: {.notes}
+Notes
+:::
+
 ## The Benidorm applicator
+
+::: {.notes}
+Notes
+:::

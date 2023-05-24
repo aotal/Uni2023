@@ -1,0 +1,148 @@
+---
+title: "Módulo 3"
+author: |
+  | Antonio Otal
+  | contacto: aotalpalacin@gmail.com
+lang: es
+execute:
+  echo: false
+format:
+  pdf:
+    page-layout: full
+    code-fold: true
+    number-sections: true
+    colorlinks: true
+    geometry:
+      - top=10mm
+      - left=10mm
+      - bottom=10mm
+      - heightrounded
+jupyter: quarto
+--- 
+
+# Describa brevemente cada uno de los pasos que se han seguido hasta la evaluación del modelo.
+
+Los pasos que se han seguido hasta la evaluación del modelo han sido los siguientes:
+
+## Importación de las librerías necesarias
+
+ Librerías de python que necesitaremos, entre ellas algunas de algebra (numpy), visualización (matplotlib, opencv...), machine learning (scikit-learn) o de deep learning (tensorflow y keras), tablas (pandas), etc.  
+
+## Obtención de los datos 
+
+Se descargaron los datos anotados de un repositorio remoto, en nuestro  caso de una cuenta de Google Drive. Dichos datos ya venían separados en los tres bloques para componer nuestro modelo, en un directorio cada uno de ellos.
+
+        - Entrenamiento (train)
+        - Validación (val)
+        - Comprobación (test)
+
+A su vez, dentro de cada uno de los directorios anteriores hay en cada uno de ellos uno llamado *normal* y otro *opacity*. Dentro de ellos se encuantran los ficheros de imagen de pulmones con neumonía y sin ella respectivamente. Mediante esta estructura se ha hecho la anotación de imágenes, las cuales vienen el formato jpeg monocromático con una profundidad de 8 bits.
+
+## Visualización de datos
+
+## Definición de la red neuronal y de los hiperparámetros** 
+
+## Entrenamiento y validación
+Entrenamos nuestra red mediante en conjunto *train* y lo validamos con *val*.
+
+# ¿Qué tipo de algoritmo de IA estamos programando?
+
+En este caso se definió una red neuronal convolucional.
+
+# En este caso ya tenemos los datos separados en datasets de entrenamiento,validación y test. ¿Qué otra herramienta podríamos usar si este no fuera el caso?
+
+En este caso se nos sugiere utilizar la librería *scikit-learn*, [train_test_split()](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html).
+
+# Describa la arquitectura de la red que se ha programado.
+
+La red cuenta con 3 capas convolucionales (las que extraerán las *features*), dos capas densas la primera con una capa de activación *relu* y otra *sigmoid*.
+
+
+# ¿Qué función de activación hemos usado en cada una de las capas convolucionales?¿Por qué se ha usado?
+
+En las capas convolucionales hemos utilizado la función de activación *relu*. Las función de activación es lo que hace que la red neuronal *escape*  del comportamiento lineal, siendo así posible que la red describa funciones no lineales. 
+
+# ¿Qué nos indica la matriz de confusión con respecto a la sensibilidad y especificidad? ¿Y la curva ROC?
+
+La sensibilidad, también conocida como la tasa de verdaderos positivos, mide la habilidad del modelo para detectar correctamente una clase específica. Mientras que la especificidad describe la capacidad del modelo para evitar falsos positivos. Como la matriz de confusión muestra la cantidad de veces que el modelo ha acertado y fallado para cada una de las clases, es una buena herramienta para evaluar ambas propiedades del modelo. Por otro lado la curva ROC es poner en una gráfica los dos parámetros mencionados(X especificidad, Y sensibilidad). Por lo tanto la forma de dicha curva determinará la idoneidad del modelo. Cuanto más se acerque a la bisectriz, peor será el modelo.
+
+
+# Ejecute el modelo con alguna variación (por ejemplo, añadiendo algún parámetro de regularización, cambiando la función de activación de alguna de las capas, modificando alguna capa, modificando algún hiperparámetro, etc.). Explique qué variación/es ha introducido y cómo cambia el resultado del modelo, adjuntando además una imagen de la matriz de confusión y la curva ROC.
+
+He añadido una capa densa extra y el modelo prácticamente no vería, incluso empeora. En la *época* 2 hace un movimiento extraño con los datos de validación. Además tanto la matriz 
+de confusión como la curva ROC arrojan peores resultados al complicar el modelo.
+
+```{python}
+
+
+#| label: fig-charts
+#| fig-cap: Comparativa entre ambas configuraciones de la red
+#| fig-subcap: 
+#|   - "Curvas de aprendizaje"
+#|   - "Matrices de confusión"
+#|   - "Curvas ROC"
+#| layout-nrow: 3
+
+import numpy as np # librería para álgebra lineal
+import matplotlib.pyplot as plt #para realizar los gráficos
+import pandas as pd
+from sklearn.metrics import roc_curve,auc,classification_report, confusion_matrix, ConfusionMatrixDisplay
+
+def plot_history(model1, model2):
+    fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(8, 2), sharey=True)
+    model1.plot(ax=ax[0], grid=True)
+    ax[0].legend(prop={'size': 5})
+    model2.plot(ax=ax[1], grid=True)
+    ax[1].legend(prop={'size': 5})
+    plt.show()
+    return
+
+
+def plot_roc_curve(ground_truth1, probability1, ground_truth2, probability2):
+    fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(8, 2), sharey=True)
+
+    for i, (ground_truth, probability) in enumerate(zip([ground_truth1, ground_truth2], [probability1, probability2])):
+        fpr, tpr, threshold_roc = roc_curve(ground_truth, probability)
+        sens = tpr; esp = fpr
+        ax[i].plot(esp, sens); ax[i].set_ylabel('Sensitivity'); ax[i].set_xlabel('1-Especificity')
+        ax[i].plot([0, 1], [0, 1], 'k--')
+        ax[i].plot(fpr, tpr, label = '%s (AUC:%0.2f)'  % ('Pneumonia', auc(fpr, tpr)))
+        ax[i].legend()
+    plt.plot()
+    return
+
+
+original = pd.read_csv('datos/Original/original.csv')
+modificado = pd.read_csv('datos/CapaDensaExtra/modificado.csv')
+plot_history(original, modificado)
+
+# Load the data
+original_classes = np.loadtxt('datos/Original/test_generator.classes.txt')
+original_y_pred = np.loadtxt('datos/Original/y_pred.txt')
+mod_classes = np.loadtxt('datos/CapaDensaExtra/test_generator.classes.txt')
+mod_y_pred = np.loadtxt('datos/CapaDensaExtra/y_pred.txt')
+
+# Create a figure and subplots
+fig, ax = plt.subplots(nrows=1, ncols=2)
+fig.subplots_adjust(wspace=1, hspace=0.1)
+
+# Create a list of the confusion matrices to plot
+confusion_matrices = [(original_classes, original_y_pred), (mod_classes, mod_y_pred)]
+
+# Loop over the confusion matrices and plot each one
+for i, (classes, y_pred) in enumerate(confusion_matrices):
+    cm = confusion_matrix(classes, y_pred)
+    display=ConfusionMatrixDisplay(confusion_matrix=cm).plot(ax=ax[i])
+
+# Adjust the layout of the plot
+fig.tight_layout()
+
+# Show the plot
+plt.show()
+
+predicciones_origin=np.loadtxt('datos/Original/predicciones.txt')
+predicciones_mod=np.loadtxt('datos/CapaDensaExtra/predicciones.txt')
+
+plot_roc_curve(original_classes, predicciones_origin, mod_classes, predicciones_mod)
+
+```
