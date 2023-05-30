@@ -13,16 +13,131 @@ jupyter: quarto
 
 ## Summary
 
+- Brachytherapy
 - Gynecological Brachytherapy
 - Imaging modalities: CT vs MRI
 - Applicator reconstruction
     - Applicators with interstitial part
 - Virtual planning
-![](img/summary.png){.absolute top=100 right=10 width="300" height="300"}
+![](img/summary.png){.absolute top=150 right=0 width="300" height="300"}
 
 ::: {.notes}
 Notes
 :::
+
+# Brachytherapy 
+
+::: {.notes}
+Brachytherapy, also known as internal radiation therapy, is a type of radiation therapy in which a radioactive substance is placed inside or directly next to the area requiring treatment. This allows for a high dose of radiation to be delivered to the tumor or other affected tissue, while minimizing exposure to healthy surrounding tissue. Brachytherapy is often used to treat cancers of the prostate, breast, cervix, and head and neck. It can also be used to treat other conditions, such as non-melanoma skin cancer and gynecological disorders.
+:::
+
+![](img/BrachySource.png){.absolute top=0 right=0 width="300" height="300"}
+
+
+## Brachytherapy vs External Beam Radiotherapy (Tele-therapy)
+
+::: {layout-ncol=2}
+![TrueBeam platform <br> Varian Medical Systems](img/TrueBeam.png)
+
+![MicroSelectron <br> Elekta](img/MicroSelectron.png){width="300"}
+:::
+::: {.notes}
+Brachytherapy: In brachytherapy, radioactive sources (such as seeds, pellets, or wires) are placed directly inside or near the tumor site. The radiation is delivered from within the body, allowing for precise targeting of the tumor while minimizing radiation exposure to surrounding healthy tissues.
+External Beam Radiotherapy: With external beam radiotherapy, the radiation is generated from a machine located outside the body. High-energy X-ray beams or other forms of radiation are directed at the tumor site from various angles.
+:::
+
+
+## Commons Locations{auto-animate=true} 
+
+Prostate 
+
+Gynecological 
+
+Breast 
+
+Head and Neck 
+
+Ophthalmic 
+
+::: {.notes}
+Prostate : This is one of the most common applications of brachytherapy. It involves the placement of tiny radioactive seeds directly into the prostate gland. The procedure is typically performed in an operating room or an outpatient clinic.
+
+Gynecological : Brachytherapy can be used to treat gynecological cancers such as cervical, endometrial, or vaginal cancer. The treatment may involve the placement of radioactive sources directly into the vagina (intravaginal brachytherapy) or into the uterus (intracavitary brachytherapy). These procedures are usually performed in a radiation oncology department.
+
+Breast : In some cases of early-stage breast cancer, brachytherapy may be used as an alternative to whole-breast radiation therapy. It involves the insertion of catheters or a specialized device with radioactive sources into the breast tissue. The treatment is typically performed in a radiation oncology department.
+
+Head and Neck : Brachytherapy can be utilized to treat certain head and neck cancers, such as tongue or oral cavity cancers. It involves the placement of radioactive sources directly into the tumor or the surgical cavity. The procedure is generally performed in a radiation oncology department or an operating room.
+
+Ophthalmic : Brachytherapy can be used to treat certain ocular tumors, such as choroidal melanoma. Radioactive plaques or seeds are surgically implanted on the sclera (white part of the eye) near the tumor. The treatment is typically performed in a specialized eye clinic or hospital.
+:::
+
+## Commons Locations{auto-animate=true} 
+
+::: {style="margin-top: 200px; font-size: 2em; color: red;"}
+Gynecological
+:::
+
+
+## Brachytherapy types{auto-animate=true} 
+
+High-Dose Rate (HDR) 
+
+Low-Dose Rate (LDR) 
+
+Pulsed-Dose Rate (PDR) 
+
+::: {.notes}
+High-Dose Rate (HDR) Brachytherapy:
+
+Energy: HDR brachytherapy uses high-energy radioactive sources, such as iridium-192 or cobalt-60.
+Rate: HDR brachytherapy delivers a high dose of radiation over a short period, typically in fractions given at multiple treatment sessions. The radioactive sources are temporarily placed inside the body using applicators or catheters, and a computer-controlled machine called an afterloader moves the sources to the treatment area.
+Low-Dose Rate (LDR) Brachytherapy:
+
+Energy: LDR brachytherapy employs low-energy radioactive sources, usually in the form of radioactive seeds or pellets, such as iodine-125 or palladium-103.
+Rate: LDR brachytherapy delivers a continuous low dose of radiation over an extended period. The radioactive sources are permanently or semi-permanently implanted in or near the tumor site. Over time, the radiation emitted by the sources gradually decreases, providing a prolonged but low-dose treatment.
+Pulsed-Dose Rate (PDR) Brachytherapy:
+
+Energy: PDR brachytherapy uses radioactive sources with intermediate energy levels, similar to HDR brachytherapy. Common isotopes used include iridium-192 or cesium-137.
+Rate: PDR brachytherapy delivers radiation in pulses or intervals. The sources are temporarily placed inside the body, and the treatment is administered using an afterloader machine that controls the timing and duration of the radiation pulses. The pulses allow for periods of radiation delivery and intervals for normal tissue recovery.
+:::
+
+## Brachytherapy types {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 2em; color: red;"}
+High-Dose Rate (HDR)
+:::
+
+## Brachytherapy workflow{auto-animate=true} 
+
+Image adquisition
+
+Contouring 
+
+Reconstruction 
+
+Dosimetry 
+
+Treatment delivery
+
+::: {.notes}
+- Imaging: The process begins with imaging studies, such as CT (computed tomography) or MRI (magnetic resonance imaging), to visualize the tumor and surrounding structures accurately.
+
+- Contouring: Radiation oncologists and medical physicists contour or delineate the tumor and nearby critical structures (organs at risk) on the imaging scans. This step helps in designing the treatment plan and ensuring accurate dose delivery.
+
+- Reconstruction
+
+- Dosimetry
+
+- Radiation Delivery: The radioactive sources are temporarily inserted into the catheters or applicators, delivering a high dose of radiation to the tumor and surrounding tissues. The treatment is carefully controlled and monitored by the medical team.
+
+:::
+
+## Brachytherapy workflow {auto-animate=true}
+
+::: {style="margin-top: 200px; font-size: 2em; color: red;"}
+Reconstruction
+:::
+
 
 # Gynecological Brachytherapy
 
@@ -31,52 +146,13 @@ Notes
 ::: {.notes}
 Notes
 :::
+## Indications
 
-## Brachytherapy vs External Beam Radiotherapy (Tele-therapy)
+- Cervical Cancer
+- Endometrial Cancer
+- Vaginal Cancer
 
-::: {.notes}
-Notes
-:::
 
-## Locations 
-
-::: {.notes}
-Notes
-:::
-
-## Brachytherapy workflow
-- Contouring
-- Reconstruction
-- Dosimetry
-- Treatment delivery
-
-::: {.notes}
-Notes
-:::
-
-## Brachytherapy workflow: Contouring
-
-::: {.notes}
-Notes
-:::
-
-## Brachytherapy workflow: Reconstruction
-
-::: {.notes}
-Notes
-:::
-
-## Brachytherapy workflow: Dosimetry
-
-::: {.notes}
-Notes
-:::
-
-## Brachytherapy workflow: Treatment delivery
-
-::: {.notes}
-Notes
-:::
 
 ## Differences between intracavitary and interstitial brachytherapy
 
@@ -84,11 +160,7 @@ Notes
 Notes
 :::
 
-## High-dose-rate and high-energy brachytherapy
 
-::: {.notes}
-Brachytherapy, also known as internal radiation therapy, is a type of radiation therapy in which a radioactive substance is placed inside or directly next to the area requiring treatment. This allows for a high dose of radiation to be delivered to the tumor or other affected tissue, while minimizing exposure to healthy surrounding tissue. Brachytherapy is often used to treat cancers of the prostate, breast, cervix, and head and neck. It can also be used to treat other conditions, such as non-melanoma skin cancer and gynecological disorders.
-:::
 
 # Imaging <br> Modalities: <br> CT vs MRI
 
