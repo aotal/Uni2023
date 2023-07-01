@@ -36,7 +36,7 @@ Brachytherapy, also known as internal radiation therapy, is a type of radiation 
 
 ## Brachytherapy vs External Beam Radiotherapy (Tele-therapy)
 
-::: {layout-ncol=2}
+:::: {layout-ncol=2}
 ![TrueBeam platform <br> Varian Medical Systems](img/TrueBeam.png)
 
 ![MicroSelectron <br> Elekta](img/MicroSelectron.png){width="300"}
@@ -44,37 +44,6 @@ Brachytherapy, also known as internal radiation therapy, is a type of radiation 
 ::: {.notes}
 Brachytherapy: In brachytherapy, radioactive sources (such as seeds, pellets, or wires) are placed directly inside or near the tumor site. The radiation is delivered from within the body, allowing for precise targeting of the tumor while minimizing radiation exposure to surrounding healthy tissues.
 External Beam Radiotherapy: With external beam radiotherapy, the radiation is generated from a machine located outside the body. High-energy X-ray beams or other forms of radiation are directed at the tumor site from various angles.
-:::
-
-
-## Commons Locations{auto-animate=true} 
-
-Prostate 
-
-Gynecological 
-
-Breast 
-
-Head and Neck 
-
-Ophthalmic 
-
-::: {.notes}
-Prostate : This is one of the most common applications of brachytherapy. It involves the placement of tiny radioactive seeds directly into the prostate gland. The procedure is typically performed in an operating room or an outpatient clinic.
-
-Gynecological : Brachytherapy can be used to treat gynecological cancers such as cervical, endometrial, or vaginal cancer. The treatment may involve the placement of radioactive sources directly into the vagina (intravaginal brachytherapy) or into the uterus (intracavitary brachytherapy). These procedures are usually performed in a radiation oncology department.
-
-Breast : In some cases of early-stage breast cancer, brachytherapy may be used as an alternative to whole-breast radiation therapy. It involves the insertion of catheters or a specialized device with radioactive sources into the breast tissue. The treatment is typically performed in a radiation oncology department.
-
-Head and Neck : Brachytherapy can be utilized to treat certain head and neck cancers, such as tongue or oral cavity cancers. It involves the placement of radioactive sources directly into the tumor or the surgical cavity. The procedure is generally performed in a radiation oncology department or an operating room.
-
-Ophthalmic : Brachytherapy can be used to treat certain ocular tumors, such as choroidal melanoma. Radioactive plaques or seeds are surgically implanted on the sclera (white part of the eye) near the tumor. The treatment is typically performed in a specialized eye clinic or hospital.
-:::
-
-## Commons Locations{auto-animate=true} 
-
-::: {style="margin-top: 200px; font-size: 2em; color: red;"}
-Gynecological
 :::
 
 
@@ -107,6 +76,42 @@ Rate: PDR brachytherapy delivers radiation in pulses or intervals. The sources a
 High-Dose Rate (HDR)
 :::
 
+
+## Brachytherapy application 
+
+:::: {.columns}
+
+::: {.column width="50%"}
+{{< video https://www.youtube.com/embed/hXDZ8aUN9-A?&start=35&end=68&autoplay=1&playlist=hXDZ8aUN9-A&loop=0&mute=1&hl=en&answer=140174
+    width="500" 
+    height="280" 
+    aspect-ratio="16x9"
+>}}
+
+Cavum
+:::
+
+::: {.column width="50%"}
+{{< video https://www.youtube.com/embed/6g4X8hAoFqM?&start=45&end=78&autoplay=1&playlist=6g4X8hAoFqM&loop=0&mute=0&hl=en&answer=140174
+    width="500" 
+    height="280"
+    aspect-ratio="16x9" 
+>}}
+
+Gynecological
+:::
+
+::::
+
+
+## Source Positions
+
+![](img/PosicionesParada.jpg)
+
+## Dose distribution
+
+![](img/DoseDistribution.png)
+
 ## Brachytherapy workflow{auto-animate=true} 
 
 Image adquisition
@@ -138,6 +143,35 @@ Treatment delivery
 Reconstruction
 :::
 
+## Commons Locations{auto-animate=true} 
+
+Prostate 
+
+Gynecological 
+
+Breast 
+
+Head and Neck 
+
+Ophthalmic 
+
+::: {.notes}
+Prostate : This is one of the most common applications of brachytherapy. It involves the placement of tiny radioactive seeds directly into the prostate gland. The procedure is typically performed in an operating room or an outpatient clinic.
+
+Gynecological : Brachytherapy can be used to treat gynecological cancers such as cervical, endometrial, or vaginal cancer. The treatment may involve the placement of radioactive sources directly into the vagina (intravaginal brachytherapy) or into the uterus (intracavitary brachytherapy). These procedures are usually performed in a radiation oncology department.
+
+Breast : In some cases of early-stage breast cancer, brachytherapy may be used as an alternative to whole-breast radiation therapy. It involves the insertion of catheters or a specialized device with radioactive sources into the breast tissue. The treatment is typically performed in a radiation oncology department.
+
+Head and Neck : Brachytherapy can be utilized to treat certain head and neck cancers, such as tongue or oral cavity cancers. It involves the placement of radioactive sources directly into the tumor or the surgical cavity. The procedure is generally performed in a radiation oncology department or an operating room.
+
+Ophthalmic : Brachytherapy can be used to treat certain ocular tumors, such as choroidal melanoma. Radioactive plaques or seeds are surgically implanted on the sclera (white part of the eye) near the tumor. The treatment is typically performed in a specialized eye clinic or hospital.
+:::
+
+## Commons Locations{auto-animate=true} 
+
+::: {style="margin-top: 200px; font-size: 2em; color: red;"}
+Gynecological
+:::
 
 # Gynecological Brachytherapy
 
@@ -154,7 +188,24 @@ Notes
 
 
 
+
 ## Differences between intracavitary and interstitial brachytherapy
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![Intracavitary brachytherapy](img/endocavitary.png){width="85%"}
+
+:::
+
+::: {.column width="50%"}
+
+![Interstitial brachytherapy](img/interstitial.jpg){width="54%"}
+
+:::
+
+::::
 
 ::: {.notes}
 Notes
