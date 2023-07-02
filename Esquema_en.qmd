@@ -226,6 +226,26 @@ Cervical Cancer
   ![](img/MRIMandatory.png)
 </div>
 
+# Reconstruction in Brachytherapy
+
+![](img/AppReconstruction.png){.absolute bottom=10 right=0 width="350" height="350"}
+
+::: {.notes}
+Notes
+:::
+
+## Problem Statement
+
+## Direct Reconstruction (DR)
+
+## Dummies
+
+## Slice thickness 
+
+## Applicator Libraries (AP)
+
+## Limitations 
+
 
 # Imaging <br> Modalities: <br> CT vs MRI
 
@@ -275,7 +295,7 @@ Notes
 Notes
 :::
 
-# Applicator Reconstruction
+# Applicator Reconstruction (Repasar)
 
 ![](img/AppReconstruction.png){.absolute bottom=10 right=0 width="350" height="350"}
 
