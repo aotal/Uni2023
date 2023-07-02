@@ -92,7 +92,7 @@ Cavum
 :::
 
 ::: {.column width="50%"}
-{{< video https://www.youtube.com/embed/6g4X8hAoFqM?&start=45&end=78&autoplay=1&playlist=6g4X8hAoFqM&loop=0&mute=0&hl=en&answer=140174
+{{< video https://www.youtube.com/embed/6g4X8hAoFqM?&start=45&end=78&autoplay=1&playlist=6g4X8hAoFqM&loop=0&mute=1&hl=en&answer=140174
     width="500" 
     height="280"
     aspect-ratio="16x9" 
@@ -103,6 +103,27 @@ Gynecological
 
 ::::
 
+## Differences between intracavitary and interstitial brachytherapy
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+![Intracavitary brachytherapy](img/endocavitary.png){width="85%"}
+
+:::
+
+::: {.column width="50%"}
+
+![Interstitial brachytherapy](img/interstitial.jpg){width="54%"}
+
+:::
+
+::::
+
+::: {.notes}
+Notes
+:::
 
 ## Source Positions
 
@@ -186,31 +207,21 @@ Notes
 - Endometrial Cancer
 - Vaginal Cancer
 
+## Indications{auto-animate=true} 
 
+ Cervical Cancer
 
+ Endometrial Cancer
 
-## Differences between intracavitary and interstitial brachytherapy
-
-:::: {.columns}
-
-::: {.column width="50%"}
-
-![Intracavitary brachytherapy](img/endocavitary.png){width="85%"}
-
-:::
-
-::: {.column width="50%"}
-
-![Interstitial brachytherapy](img/interstitial.jpg){width="54%"}
-
-:::
-
-::::
+ Vaginal Cancer
 
 ::: {.notes}
 Notes
 :::
 
+## MRI golden standart
+
+![](img/MRIMandatory.png)
 
 
 # Imaging <br> Modalities: <br> CT vs MRI
