@@ -201,11 +201,6 @@ Gynecological
 ::: {.notes}
 Notes
 :::
-## Indications
-
-- Cervical Cancer
-- Endometrial Cancer
-- Vaginal Cancer
 
 ## Indications{auto-animate=true} 
 
@@ -217,6 +212,12 @@ Notes
 
 ::: {.notes}
 Notes
+:::
+
+## Indications{auto-animate=true} 
+
+::: {style="margin-top: 200px; font-size: 2em; color: red;"}
+Cervical Cancer
 :::
 
 ## MRI golden standart
