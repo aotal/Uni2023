@@ -11,7 +11,7 @@ format:
 jupyter: quarto       
 ---
 
-## Summary
+## Summary (Actualizar)
 
 - Brachytherapy
 - Gynecological Brachytherapy
@@ -47,7 +47,7 @@ External Beam Radiotherapy: With external beam radiotherapy, the radiation is ge
 :::
 
 
-## Brachytherapy types{auto-animate=true} 
+## Brachytherapy modalities {auto-animate=true} 
 
 High-Dose Rate (HDR) 
 
@@ -70,7 +70,7 @@ Energy: PDR brachytherapy uses radioactive sources with intermediate energy leve
 Rate: PDR brachytherapy delivers radiation in pulses or intervals. The sources are temporarily placed inside the body, and the treatment is administered using an afterloader machine that controls the timing and duration of the radiation pulses. The pulses allow for periods of radiation delivery and intervals for normal tissue recovery.
 :::
 
-## Brachytherapy types {auto-animate=true}
+## Brachytherapy modalities {auto-animate=true}
 
 ::: {style="margin-top: 200px; font-size: 2em; color: red;"}
 High-Dose Rate (HDR)
@@ -235,6 +235,8 @@ Notes
 :::
 
 ## Problem Statement
+
+## Impact on dose distribution 
 
 ## Direct Reconstruction (DR)
 
