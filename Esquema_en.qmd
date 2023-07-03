@@ -8,120 +8,94 @@ format:
         logo: irimed.png
         footer: "[IRIMED](http://www.uv.es/radiofisica/index.html)"
         css: styles.css
-jupyter: quarto       
+jupyter: quarto    
 ---
 
 ## Summary (Actualizar)
 
-- Brachytherapy
-- Gynecological Brachytherapy
-- Imaging modalities: CT vs MRI
-- Applicator reconstruction
-    - Applicators with interstitial part
-- Virtual planning
-![](img/summary.png){.absolute top=150 right=0 width="300" height="300"}
+-   Brachytherapy
+-   Gynecological Brachytherapy
+-   Imaging modalities: CT vs MRI
+-   Applicator reconstruction
+    -   Applicators with interstitial part
+-   Virtual planning 
 
-::: {.notes}
+::: notes
 Notes
 :::
 
-# Brachytherapy 
+# Brachytherapy
 
-::: {.notes}
+::: notes
 Brachytherapy, also known as internal radiation therapy, is a type of radiation therapy in which a radioactive substance is placed inside or directly next to the area requiring treatment. This allows for a high dose of radiation to be delivered to the tumor or other affected tissue, while minimizing exposure to healthy surrounding tissue. Brachytherapy is often used to treat cancers of the prostate, breast, cervix, and head and neck. It can also be used to treat other conditions, such as non-melanoma skin cancer and gynecological disorders.
 :::
-
-![](img/BrachySource.png){.absolute top=0 right=0 width="300" height="300"}
 
 
 ## Brachytherapy vs External Beam Radiotherapy (Tele-therapy)
 
-:::: {layout-ncol=2}
+::: {layout-ncol="2"}
 ![TrueBeam platform <br> Varian Medical Systems](img/TrueBeam.png)
 
 ![MicroSelectron <br> Elekta](img/MicroSelectron.png){width="300"}
 :::
-::: {.notes}
-Brachytherapy: In brachytherapy, radioactive sources (such as seeds, pellets, or wires) are placed directly inside or near the tumor site. The radiation is delivered from within the body, allowing for precise targeting of the tumor while minimizing radiation exposure to surrounding healthy tissues.
-External Beam Radiotherapy: With external beam radiotherapy, the radiation is generated from a machine located outside the body. High-energy X-ray beams or other forms of radiation are directed at the tumor site from various angles.
+
+::: notes
+Brachytherapy: In brachytherapy, radioactive sources (such as seeds, pellets, or wires) are placed directly inside or near the tumor site. The radiation is delivered from within the body, allowing for precise targeting of the tumor while minimizing radiation exposure to surrounding healthy tissues. External Beam Radiotherapy: With external beam radiotherapy, the radiation is generated from a machine located outside the body. High-energy X-ray beams or other forms of radiation are directed at the tumor site from various angles.
 :::
 
+## Brachytherapy modalities {auto-animate="true"}
 
-## Brachytherapy modalities {auto-animate=true} 
+High-Dose Rate (HDR)
 
-High-Dose Rate (HDR) 
+Low-Dose Rate (LDR)
 
-Low-Dose Rate (LDR) 
+Pulsed-Dose Rate (PDR)
 
-Pulsed-Dose Rate (PDR) 
-
-::: {.notes}
+::: notes
 High-Dose Rate (HDR) Brachytherapy:
 
-Energy: HDR brachytherapy uses high-energy radioactive sources, such as iridium-192 or cobalt-60.
-Rate: HDR brachytherapy delivers a high dose of radiation over a short period, typically in fractions given at multiple treatment sessions. The radioactive sources are temporarily placed inside the body using applicators or catheters, and a computer-controlled machine called an afterloader moves the sources to the treatment area.
-Low-Dose Rate (LDR) Brachytherapy:
+Energy: HDR brachytherapy uses high-energy radioactive sources, such as iridium-192 or cobalt-60. Rate: HDR brachytherapy delivers a high dose of radiation over a short period, typically in fractions given at multiple treatment sessions. The radioactive sources are temporarily placed inside the body using applicators or catheters, and a computer-controlled machine called an afterloader moves the sources to the treatment area. Low-Dose Rate (LDR) Brachytherapy:
 
-Energy: LDR brachytherapy employs low-energy radioactive sources, usually in the form of radioactive seeds or pellets, such as iodine-125 or palladium-103.
-Rate: LDR brachytherapy delivers a continuous low dose of radiation over an extended period. The radioactive sources are permanently or semi-permanently implanted in or near the tumor site. Over time, the radiation emitted by the sources gradually decreases, providing a prolonged but low-dose treatment.
-Pulsed-Dose Rate (PDR) Brachytherapy:
+Energy: LDR brachytherapy employs low-energy radioactive sources, usually in the form of radioactive seeds or pellets, such as iodine-125 or palladium-103. Rate: LDR brachytherapy delivers a continuous low dose of radiation over an extended period. The radioactive sources are permanently or semi-permanently implanted in or near the tumor site. Over time, the radiation emitted by the sources gradually decreases, providing a prolonged but low-dose treatment. Pulsed-Dose Rate (PDR) Brachytherapy:
 
-Energy: PDR brachytherapy uses radioactive sources with intermediate energy levels, similar to HDR brachytherapy. Common isotopes used include iridium-192 or cesium-137.
-Rate: PDR brachytherapy delivers radiation in pulses or intervals. The sources are temporarily placed inside the body, and the treatment is administered using an afterloader machine that controls the timing and duration of the radiation pulses. The pulses allow for periods of radiation delivery and intervals for normal tissue recovery.
+Energy: PDR brachytherapy uses radioactive sources with intermediate energy levels, similar to HDR brachytherapy. Common isotopes used include iridium-192 or cesium-137. Rate: PDR brachytherapy delivers radiation in pulses or intervals. The sources are temporarily placed inside the body, and the treatment is administered using an afterloader machine that controls the timing and duration of the radiation pulses. The pulses allow for periods of radiation delivery and intervals for normal tissue recovery.
 :::
 
-## Brachytherapy modalities {auto-animate=true}
+## Brachytherapy modalities {auto-animate="true"}
 
 ::: {style="margin-top: 200px; font-size: 2em; color: red;"}
 High-Dose Rate (HDR)
 :::
 
+## Brachytherapy application
 
-## Brachytherapy application 
-
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
-{{< video https://www.youtube.com/embed/hXDZ8aUN9-A?&start=35&end=68&autoplay=1&playlist=hXDZ8aUN9-A&loop=0&mute=1&hl=en&answer=140174
-    width="500" 
-    height="280" 
-    aspect-ratio="16x9"
->}}
+{{< video https://www.youtube.com/embed/hXDZ8aUN9-A?&start=35&end=68&autoplay=1&playlist=hXDZ8aUN9-A&loop=0&mute=1&hl=en&answer=140174 width="500" height="280" aspect-ratio="16x9" >}}
 
 Cavum
 :::
 
 ::: {.column width="50%"}
-{{< video https://www.youtube.com/embed/6g4X8hAoFqM?&start=45&end=78&autoplay=1&playlist=6g4X8hAoFqM&loop=0&mute=1&hl=en&answer=140174
-    width="500" 
-    height="280"
-    aspect-ratio="16x9" 
->}}
+{{< video https://www.youtube.com/embed/6g4X8hAoFqM?&start=45&end=78&autoplay=1&playlist=6g4X8hAoFqM&loop=0&mute=1&hl=en&answer=140174 width="500" height="280" aspect-ratio="16x9" >}}
 
 Gynecological
 :::
-
-::::
+:::
 
 ## Differences between intracavitary and interstitial brachytherapy
 
-:::: {.columns}
-
+::: columns
 ::: {.column width="50%"}
-
 ![Intracavitary brachytherapy](img/endocavitary.png){width="85%"}
-
 :::
 
 ::: {.column width="50%"}
-
 ![Interstitial brachytherapy](img/interstitial.jpg){width="54%"}
-
+:::
 :::
 
-::::
-
-::: {.notes}
+::: notes
 Notes
 :::
 
@@ -133,50 +107,49 @@ Notes
 
 ![](img/DoseDistribution.png)
 
-## Brachytherapy workflow{auto-animate=true} 
+## Brachytherapy workflow {auto-animate="true"}
 
 Image adquisition
 
-Contouring 
+Contouring
 
-Reconstruction 
+Reconstruction
 
-Dosimetry 
+Dosimetry
 
 Treatment delivery
 
-::: {.notes}
-- Imaging: The process begins with imaging studies, such as CT (computed tomography) or MRI (magnetic resonance imaging), to visualize the tumor and surrounding structures accurately.
+::: notes
+-   Imaging: The process begins with imaging studies, such as CT (computed tomography) or MRI (magnetic resonance imaging), to visualize the tumor and surrounding structures accurately.
 
-- Contouring: Radiation oncologists and medical physicists contour or delineate the tumor and nearby critical structures (organs at risk) on the imaging scans. This step helps in designing the treatment plan and ensuring accurate dose delivery.
+-   Contouring: Radiation oncologists and medical physicists contour or delineate the tumor and nearby critical structures (organs at risk) on the imaging scans. This step helps in designing the treatment plan and ensuring accurate dose delivery.
 
-- Reconstruction
+-   Reconstruction
 
-- Dosimetry
+-   Dosimetry
 
-- Radiation Delivery: The radioactive sources are temporarily inserted into the catheters or applicators, delivering a high dose of radiation to the tumor and surrounding tissues. The treatment is carefully controlled and monitored by the medical team.
-
+-   Radiation Delivery: The radioactive sources are temporarily inserted into the catheters or applicators, delivering a high dose of radiation to the tumor and surrounding tissues. The treatment is carefully controlled and monitored by the medical team.
 :::
 
-## Brachytherapy workflow {auto-animate=true}
+## Brachytherapy workflow {auto-animate="true"}
 
 ::: {style="margin-top: 200px; font-size: 2em; color: red;"}
 Reconstruction
 :::
 
-## Commons Locations{auto-animate=true} 
+## Commons Locations {auto-animate="true"}
 
-Prostate 
+Prostate
 
-Gynecological 
+Gynecological
 
-Breast 
+Breast
 
-Head and Neck 
+Head and Neck
 
-Ophthalmic 
+Ophthalmic
 
-::: {.notes}
+::: notes
 Prostate : This is one of the most common applications of brachytherapy. It involves the placement of tiny radioactive seeds directly into the prostate gland. The procedure is typically performed in an operating room or an outpatient clinic.
 
 Gynecological : Brachytherapy can be used to treat gynecological cancers such as cervical, endometrial, or vaginal cancer. The treatment may involve the placement of radioactive sources directly into the vagina (intravaginal brachytherapy) or into the uterus (intracavitary brachytherapy). These procedures are usually performed in a radiation oncology department.
@@ -188,7 +161,7 @@ Head and Neck : Brachytherapy can be utilized to treat certain head and neck can
 Ophthalmic : Brachytherapy can be used to treat certain ocular tumors, such as choroidal melanoma. Radioactive plaques or seeds are surgically implanted on the sclera (white part of the eye) near the tumor. The treatment is typically performed in a specialized eye clinic or hospital.
 :::
 
-## Commons Locations{auto-animate=true} 
+## Commons Locations {auto-animate="true"}
 
 ::: {style="margin-top: 200px; font-size: 2em; color: red;"}
 Gynecological
@@ -196,25 +169,23 @@ Gynecological
 
 # Gynecological Brachytherapy
 
-![](img/BraquiGine.png){.absolute top=0 right=50 width="300" height="300"}
-
-::: {.notes}
+::: notes
 Notes
 :::
 
-## Indications{auto-animate=true} 
+## Indications {auto-animate="true"}
 
- Cervical Cancer
+Cervical Cancer
 
- Endometrial Cancer
+Endometrial Cancer
 
- Vaginal Cancer
+Vaginal Cancer
 
-::: {.notes}
+::: notes
 Notes
 :::
 
-## Indications{auto-animate=true} 
+## Indications {auto-animate="true"}
 
 ::: {style="margin-top: 200px; font-size: 2em; color: red;"}
 Cervical Cancer
@@ -222,41 +193,55 @@ Cervical Cancer
 
 ## MRI golden standart
 
-<div style="display: inline-block; border: 1px solid black; padding: 5px;">
-  ![](img/MRIMandatory.png)
-</div>
+::: {style="display: inline-block; border: 1px solid black; padding: 5px;"}
+![](img/MRIMandatory.png)
+:::
 
 # Reconstruction in Brachytherapy
 
-![](img/AppReconstruction.png){.absolute bottom=10 right=0 width="350" height="350"}
-
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## Problem Statement
 
-## Impact on dose distribution 
+::: columns
+::: {.column width="50%"}
+![](img/EsquemaLigadura.png){width="100%"}
+:::
+
+::: {.column width="50%"}
+![](img/Gastro.png){width="100%"}
+:::
+:::
+
+::: notes
+Notes
+:::
+
+## Impact on dose distribution
+
+::: {style="display: inline-block; border: 1px solid black; padding: 5px;"}
+![](img/EfectoIncertidumbrePosicionamiento.PNG){width="60%"}
+:::
+
 
 ## Direct Reconstruction (DR)
 
 ## Dummies
 
-## Slice thickness 
+## Slice thickness
 
 ## Applicator Libraries (AP)
 
-## Limitations 
-
+## Limitations
 
 # Imaging <br> Modalities: <br> CT vs MRI
 
-![](img/OldTV.jpg){.absolute top=0 right=75}
 
-::: {.notes}
+::: notes
 Notes
 :::
-
 
 ## The use of imaging in brachytherapy
 
@@ -269,112 +254,109 @@ ImagenEntrada=trimesh.load('OD20_0.stl')
 ImagenEntrada.show()
 ```
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## CT-guided brachytherapy
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## Transition to MRI
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## Image registration
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## MRI-guided exclusive brachytherapy
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 # Applicator Reconstruction (Repasar)
 
-![](img/AppReconstruction.png){.absolute bottom=10 right=0 width="350" height="350"}
 
-::: {.notes}
+::: notes
 Notes
 :::
 
-## Introduction and definition 
+## Introduction and definition
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## Direct reconstruction: Pros and cons
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## Dummies
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## Reconstruction using libraries
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## Limitations of reconstruction using libraries
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## Applicators with Interstitial Part
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## Focus on MRI-compatible applicators
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## Plastic applicators
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## Metallic applicators (titanium)
 
-::: {.notes}
+::: notes
 Notes
 :::
 
-# Virtual <br> Planning 
+# Virtual <br> Planning
 
-![](img/Virtual.png){.absolute bottom=10 right=0 width="350" height="350"}
-
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## Presentation of the problem
 
-::: {.notes}
+::: notes
 Notes
 :::
 
 ## The Benidorm applicator
 
-::: {.notes}
+::: notes
 Notes
 :::
