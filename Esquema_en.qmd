@@ -8,6 +8,9 @@ format:
         logo: irimed.png
         footer: "[IRIMED](http://www.uv.es/radiofisica/index.html)"
         css: styles.css
+        number-sections: false
+        slide-number: false
+        center: false
 jupyter: quarto    
 ---
 
@@ -24,7 +27,7 @@ jupyter: quarto
 Notes
 :::
 
-# Brachytherapy
+# Brachytherapy 
 
 ::: notes
 Brachytherapy, also known as internal radiation therapy, is a type of radiation therapy in which a radioactive substance is placed inside or directly next to the area requiring treatment. This allows for a high dose of radiation to be delivered to the tumor or other affected tissue, while minimizing exposure to healthy surrounding tissue. Brachytherapy is often used to treat cancers of the prostate, breast, cervix, and head and neck. It can also be used to treat other conditions, such as non-melanoma skin cancer and gynecological disorders.
@@ -67,6 +70,10 @@ Energy: PDR brachytherapy uses radioactive sources with intermediate energy leve
 High-Dose Rate (HDR)
 :::
 
+::: notes
+Notes
+:::
+
 ## Brachytherapy application
 
 ::: columns
@@ -83,9 +90,30 @@ Gynecological
 :::
 :::
 
+::: notes
+Notes
+:::
+
+## Source Positions
+
+![](img/PosicionesParada.jpg)
+
+::: notes
+Notes
+:::
+
+## Dose distribution
+
+![](img/DoseDistribution.png)
+
+::: notes
+Notes
+:::
+
 ## Differences between intracavitary and interstitial brachytherapy
 
 ::: columns
+
 ::: {.column width="50%"}
 ![Intracavitary brachytherapy](img/endocavitary.png){width="85%"}
 :::
@@ -99,13 +127,6 @@ Gynecological
 Notes
 :::
 
-## Source Positions
-
-![](img/PosicionesParada.jpg)
-
-## Dose distribution
-
-![](img/DoseDistribution.png)
 
 ## Brachytherapy workflow {auto-animate="true"}
 
@@ -206,6 +227,7 @@ Notes
 ## Problem Statement
 
 ::: columns
+
 ::: {.column width="50%"}
 ![](img/EsquemaLigadura.png){width="100%"}
 :::
@@ -220,23 +242,96 @@ Notes
 :::
 
 ## Impact on dose distribution
+::: columns
 
+::: {.column width="50%"}
 ::: {style="display: inline-block; border: 1px solid black; padding: 5px;"}
-![](img/EfectoIncertidumbrePosicionamiento.PNG){width="60%"}
+![](img/EfectoIncertidumbrePosicionamiento.PNG)
 :::
+:::
+
+::: {.column width="50%"}
+DVH parameters
+
+- Bladder and rectum in ant-pos direction: 5%-6% per mm
+- Rest of organs and directions: 4% per mm 
+
+
+:::
+:::
+
+
+::: {.callout-important}
+Systematic errors of a few millimetres can lead to significant deviations (More than 10%).
+:::
+
+::: notes
+Notes
+:::
+
 
 
 ## Direct Reconstruction (DR)
 
+
+::: notes
+Notes
+:::
+
+
 ## Dummies
+
+::: notes
+Notes
+:::
+
 
 ## Slice thickness
 
+::: notes
+Notes
+:::
+
+
 ## Applicator Libraries (AP)
+
+::: notes
+Notes
+:::
+
 
 ## Limitations
 
-# Imaging <br> Modalities: <br> CT vs MRI
+::: notes
+Notes
+:::
+
+
+## Applicators with Interstitial Part
+
+::: notes
+Notes
+:::
+
+## Focus on MRI-compatible applicators
+
+::: notes
+Notes
+:::
+
+## Plastic applicators
+
+::: notes
+Notes
+:::
+
+## Metallic applicators (titanium)
+
+::: notes
+Notes
+:::
+
+# Imaging Modalities <br> CT vs MRI
 
 
 ::: notes
@@ -277,67 +372,6 @@ Notes
 :::
 
 ## MRI-guided exclusive brachytherapy
-
-::: notes
-Notes
-:::
-
-# Applicator Reconstruction (Repasar)
-
-
-::: notes
-Notes
-:::
-
-## Introduction and definition
-
-::: notes
-Notes
-:::
-
-## Direct reconstruction: Pros and cons
-
-::: notes
-Notes
-:::
-
-## Dummies
-
-::: notes
-Notes
-:::
-
-## Reconstruction using libraries
-
-::: notes
-Notes
-:::
-
-## Limitations of reconstruction using libraries
-
-::: notes
-Notes
-:::
-
-## Applicators with Interstitial Part
-
-::: notes
-Notes
-:::
-
-## Focus on MRI-compatible applicators
-
-::: notes
-Notes
-:::
-
-## Plastic applicators
-
-::: notes
-Notes
-:::
-
-## Metallic applicators (titanium)
 
 ::: notes
 Notes
