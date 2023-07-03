@@ -218,6 +218,18 @@ Cervical Cancer
 ![](img/MRIMandatory.png)
 :::
 
+## MRI vs CT
+
+::: {layout-ncol=2}
+
+![CT slice of a Fletcher applicator ](img/CTFletcher.JPG){width=85%}
+
+![MRI slice of a Fletcher applicator ](img/MRIFletcher.JPG){width=85%}
+
+:::
+
+Contrast between a slice of the Eckert&Ziegler fletcher applicator in CT and MRI.
+
 # Reconstruction in Brachytherapy
 
 ::: notes
@@ -273,13 +285,6 @@ Notes
 
 ## Direct Reconstruction (DR)
 
-
-::: notes
-Notes
-:::
-
-
-## Dummies
 
 ::: notes
 Notes
