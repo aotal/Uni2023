@@ -315,17 +315,24 @@ Notes
 ## Dummies CT
 
 ::: {layout-ncol="2"}
-![CT dummies image](img/dummies.jpg){width="10%"}
 
-![Dummies image](img/Dummies_bebig.png){width="10%"}
+![](img/dummies.jpg)
+
+![](img/Dummies_bebig.jpg)
+
+
 :::
 
 ## Dummies MRI
 
 ::: {layout-ncol="2"}
-![MRI dummies image](img/DummiesMR_Image.jpg){width="10%"}
+![](img/DummiesMR_Image.jpg)
 
-![dummies image](img/DummiesMR.jpg){width="10%"}
+![](img/DummiesMR.png)
+:::
+
+::: {.callout-caution}
+There are no commercial dummies for MRI compatible needles.
 :::
 
 ## Applicator Libraries (AP)
@@ -352,12 +359,6 @@ to each other could change inside the patient.</q>
 Notes
 :::
 
-
-## Applicators with Interstitial Part
-
-::: notes
-Notes
-:::
 
 ## Focus on MRI-compatible applicators
 
@@ -386,14 +387,7 @@ Notes
 
 ## The use of imaging in brachytherapy
 
-```{python}
-import trimesh
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.path import Path
-ImagenEntrada=trimesh.load('OD20_0.stl')
-ImagenEntrada.show()
-```
+
 
 ::: notes
 Notes
@@ -436,6 +430,100 @@ Notes
 :::
 
 ## The Benidorm applicator
+
+::: notes
+Notes
+:::
+
+# Contributions
+
+
+
+## Applicators with Interstitial Part
+
+```{python}
+import trimesh
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.path import Path
+ImagenEntrada=trimesh.load('stl/Utrecht20.stl')
+ImagenEntrada.show()
+```
+
+::: notes
+Notes
+:::
+
+
+## Viena Pellets
+
+
+
+::: {layout-ncol="2"}
+
+![](img/VienaPellets1.JPG){width="100%"}
+![](img/VienaPellets2.JPG){width="100%"}
+
+```{python}
+import trimesh
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.path import Path
+ImagenEntrada=trimesh.load('stl/VienaPellets.stl')
+ImagenEntrada.show()
+```
+
+:::
+
+
+::: notes
+Notes
+:::
+
+## Characterization of a Gynaecological Titanium Applicator for Direct Reconstruction on MRI (AAPM2019)
+
+::: {layout-ncol="2"}
+![](img/D3.png){width="100%"}
+![](img/D2.png){width="100%"}
+
+
+```{python}
+import trimesh
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.path import Path
+ImagenEntrada=trimesh.load('stl/Fletcher.stl')
+ImagenEntrada.show()
+```
+:::
+
+::: notes
+Notes
+:::
+
+## Novel Semi-Automatic Reconstruction Method for Plastic Gynaecological Applicators (AAPM2019)
+
+::: {layout-ncol="2"}
+![](img/AAPM2019.png){width="100%"}
+
+
+```{python}
+import trimesh
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.path import Path
+ImagenEntrada=trimesh.load('stl/Utrecht20.stl')
+ImagenEntrada.show()
+```
+:::
+
+::: notes
+Notes
+:::
+
+## A novel tool for the reconstruction of the Utrecht applicator on MRI (ABS2021)
+
+{{< video https://www.youtube.com/embed/kv827vIsAZM?&start=197&autoplay=1&playlist=kv827vIsAZM&loop=0&mute=1&hl=en&answer=140174 width="800" height="448" aspect-ratio="16x9" >}}
 
 ::: notes
 Notes
