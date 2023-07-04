@@ -188,7 +188,7 @@ Ophthalmic : Brachytherapy can be used to treat certain ocular tumors, such as c
 Gynecological
 :::
 
-# Gynecological Brachytherapy
+# Gynecological Brachytherapy HDR
 
 ::: notes
 Notes
@@ -218,17 +218,26 @@ Cervical Cancer
 ![](img/MRIMandatory.png)
 :::
 
-## MRI vs CT
+## MRI vs CT: Cervix
 
 ::: {layout-ncol=2}
 
-![CT slice of a Fletcher applicator ](img/CTFletcher.JPG){width=85%}
+![](img/CervixCT.png){width=85%}
 
-![MRI slice of a Fletcher applicator ](img/MRIFletcher.JPG){width=85%}
+![](img/CervixMR.png){width=85%}
 
 :::
 
-Contrast between a slice of the Eckert&Ziegler fletcher applicator in CT and MRI.
+## MRI vs CT: Applicator
+
+::: {layout-ncol=2}
+
+![](img/CTFletcher.JPG){width=85%}
+
+![](img/MRIFletcher.JPG){width=85%}
+
+:::
+
 
 # Reconstruction in Brachytherapy
 
@@ -248,6 +257,9 @@ Notes
 ![](img/Gastro.png){width="100%"}
 :::
 :::
+
+- The problem is a conversion from 3D to 1D due to the constraints involved.
+- Most distal position as origin of l parameter.
 
 ::: notes
 Notes
@@ -273,7 +285,7 @@ DVH parameters
 :::
 
 
-::: {.callout-important}
+::: {.callout-warning}
 Systematic errors of a few millimetres can lead to significant deviations (More than 10%).
 :::
 
@@ -285,20 +297,42 @@ Notes
 
 ## Direct Reconstruction (DR)
 
+The most distal stopping position (tip position) and the trajectory of the source on the image must be identified.
+
+### Pros
+
+- This is the most intuitive and straightforward way to do it.
+
+### Cons
+
+- Trajectory and/or tip position of the source may not be visible
+- Slice thickness 
 
 ::: notes
 Notes
 :::
 
+## Dummies CT
 
-## Slice thickness
+::: {layout-ncol="2"}
+![CT dummies image](img/dummies.jpg){width="10%"}
 
-::: notes
-Notes
+![Dummies image](img/Dummies_bebig.png){width="10%"}
 :::
 
+## Dummies MRI
+
+::: {layout-ncol="2"}
+![MRI dummies image](img/DummiesMR_Image.jpg){width="10%"}
+
+![dummies image](img/DummiesMR.jpg){width="10%"}
+:::
 
 ## Applicator Libraries (AP)
+
+![](img/AppLibraries.png){width="70%"}
+
+![](img/AppLUtrecht.png){width="70%"}
 
 ::: notes
 Notes
@@ -306,6 +340,13 @@ Notes
 
 
 ## Limitations
+
+::: {style="display: inline-block; border: 1px solid black; padding: 5px;"}
+![](img/HellebustArticle.png)
+:::
+<q cite="https://pubmed.ncbi.nlm.nih.gov/20663578/">When using several rigid applicators each applicator should be imported separately,
+since there is a risk that the position of the applicators in relation
+to each other could change inside the patient.</q>
 
 ::: notes
 Notes
