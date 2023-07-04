@@ -438,24 +438,7 @@ Notes
 # Contributions
 
 
-
-## Applicators with Interstitial Part
-
-```{python}
-import trimesh
-import numpy as np
-import matplotlib.pyplot as plt
-from matplotlib.path import Path
-ImagenEntrada=trimesh.load('stl/Utrecht20.stl')
-ImagenEntrada.show()
-```
-
-::: notes
-Notes
-:::
-
-
-## Viena Pellets
+## ALFIM2016
 
 
 
