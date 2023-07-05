@@ -14,14 +14,12 @@ format:
 jupyter: quarto    
 ---
 
-## Summary (Actualizar)
+## Summary
 
 -   Brachytherapy
 -   Gynecological Brachytherapy
--   Imaging modalities: CT vs MRI
 -   Applicator reconstruction
-    -   Applicators with interstitial part
--   Virtual planning 
+-   Contributions
 
 ::: notes
 Notes
@@ -187,6 +185,26 @@ Ophthalmic : Brachytherapy can be used to treat certain ocular tumors, such as c
 ::: {style="margin-top: 200px; font-size: 2em; color: red;"}
 Gynecological
 :::
+
+## The use of imaging in 3D brachytherapy
+
+- Ultrasound (US)
+- Computed tomography (CT)
+- Magnetic resonance imaging (MRI)
+
+::: notes
+Notes
+:::
+
+## Image registration
+
+- Rigid registration
+- Deformable registration
+
+::: notes
+Notes
+:::
+
 
 # Gynecological Brachytherapy HDR
 
@@ -359,14 +377,15 @@ to each other could change inside the patient.</q>
 Notes
 :::
 
-
-## Focus on MRI-compatible applicators
-
-::: notes
-Notes
-:::
-
 ## Plastic applicators
+
+::: {layout-ncol="2"}
+
+![](img/Geneva.jpg){width="100%"}
+
+![](img/Venecia.png){width="100%"}
+
+:::
 
 ::: notes
 Notes
@@ -374,62 +393,22 @@ Notes
 
 ## Metallic applicators (titanium)
 
-::: notes
-Notes
+::: {layout-ncol="2"}
+
+![](img/FletcherReal3D.png){width="100%"}
+
+![](img/vienabebigfoto.png){width="100%"}
+
 :::
-
-# Imaging Modalities <br> CT vs MRI
-
-
-::: notes
-Notes
-:::
-
-## The use of imaging in brachytherapy
-
-
 
 ::: notes
 Notes
 :::
 
-## CT-guided brachytherapy
+## Artifacts
 
-::: notes
-Notes
-:::
+![](img/ArtefactoTitanio.png){width="100%"}
 
-## Transition to MRI
-
-::: notes
-Notes
-:::
-
-## Image registration
-
-::: notes
-Notes
-:::
-
-## MRI-guided exclusive brachytherapy
-
-::: notes
-Notes
-:::
-
-# Virtual <br> Planning
-
-::: notes
-Notes
-:::
-
-## Presentation of the problem
-
-::: notes
-Notes
-:::
-
-## The Benidorm applicator
 
 ::: notes
 Notes
@@ -437,10 +416,66 @@ Notes
 
 # Contributions
 
+## Journal of Comtemporary Brachytherapy (2017 vol 1)
+
+::: {style="display: inline-block; border: 1px solid black; padding: 5px;"}
+![](img/otal2017.PNG){width="100%"}
+:::
+
+## Journal of Comtemporary Brachytherapy (2017 vol 1)
+
+::: {layout-ncol="2"}
+![](img/JCB2017_1.jpg){width="100%"}
+![](img/JCB2017_3.jpg){width="75%"}
+
+![](img/JCB2017_2.jpg){width="100%"}
+![](img/JCB2017_4.png){width="100%"}
+:::
+
+## Journal of Comtemporary Brachytherapy (2017 vol 2)
+
+::: {style="display: inline-block; border: 1px solid black; padding: 5px;"}
+![](img/rodriguez2017.PNG){width="100%"}
+:::
+
+## Journal of Comtemporary Brachytherapy (2017 vol 2)
+
+::: {layout-ncol="2"}
+![](img/JCB2017_pp_1.jpg){width="100%"}
+
+
+![](img/JCB2017_pp_2.jpg){width="100%"}
+:::
 
 ## ALFIM2016
 
+::: {layout-ncol="2"}
 
+::: {layout-nrow="2"}
+
+![](img/viena2.png){width="100%"}
+
+![](img/viena3.jpg){width="100%"}
+
+:::
+
+::: {layout-nrow="2"}
+
+{{< video https://www.youtube.com/embed/8CICX-2W92Q?&autoplay=1&playlist=8CICX-2W92Q&loop=1&mute=1&hl=en&answer=140174 weight="100" height="220" >}}
+
+![](img/viena1.png){width="100%"}
+
+:::
+:::
+
+
+::: notes
+Notes
+:::
+
+
+
+## ALFIM2016
 
 ::: {layout-ncol="2"}
 
@@ -463,7 +498,10 @@ ImagenEntrada.show()
 Notes
 :::
 
-## Characterization of a Gynaecological Titanium Applicator for Direct Reconstruction on MRI (AAPM2019)
+
+## AAPM2019
+
+Characterization of a Gynaecological Titanium Applicator for Direct Reconstruction on MRI
 
 ::: {layout-ncol="2"}
 ![](img/D3.png){width="100%"}
@@ -484,7 +522,9 @@ ImagenEntrada.show()
 Notes
 :::
 
-## Novel Semi-Automatic Reconstruction Method for Plastic Gynaecological Applicators (AAPM2019)
+## AAPM2019
+
+Novel Semi-Automatic Reconstruction Method for Plastic Gynaecological Applicators
 
 ::: {layout-ncol="2"}
 ![](img/AAPM2019.png){width="100%"}
@@ -504,10 +544,16 @@ ImagenEntrada.show()
 Notes
 :::
 
-## A novel tool for the reconstruction of the Utrecht applicator on MRI (ABS2021)
+## ABS2021
+
+A novel tool for the reconstruction of the Utrecht applicator on MRI
 
 {{< video https://www.youtube.com/embed/kv827vIsAZM?&start=197&autoplay=1&playlist=kv827vIsAZM&loop=0&mute=1&hl=en&answer=140174 width="800" height="448" aspect-ratio="16x9" >}}
 
 ::: notes
 Notes
 :::
+
+# 
+
+<h1> Thank you for your attention </h1>
