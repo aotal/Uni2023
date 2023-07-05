@@ -28,7 +28,8 @@ Notes
 # Brachytherapy 
 
 ::: notes
-Brachytherapy, also known as internal radiation therapy, is a type of radiation therapy in which a radioactive substance is placed inside or directly next to the area requiring treatment. This allows for a high dose of radiation to be delivered to the tumor or other affected tissue, while minimizing exposure to healthy surrounding tissue. Brachytherapy is often used to treat cancers of the prostate, breast, cervix, and head and neck. It can also be used to treat other conditions, such as non-melanoma skin cancer and gynecological disorders.
+Implantes permanentes o temporales
+Como veremos isótopos de HDR (Co6 y Ir192)
 :::
 
 
@@ -41,7 +42,7 @@ Brachytherapy, also known as internal radiation therapy, is a type of radiation 
 :::
 
 ::: notes
-Brachytherapy: In brachytherapy, radioactive sources (such as seeds, pellets, or wires) are placed directly inside or near the tumor site. The radiation is delivered from within the body, allowing for precise targeting of the tumor while minimizing radiation exposure to surrounding healthy tissues. External Beam Radiotherapy: With external beam radiotherapy, the radiation is generated from a machine located outside the body. High-energy X-ray beams or other forms of radiation are directed at the tumor site from various angles.
+Braquirerapia (fuente en el tumor o en su proximidad, teleterapia, haces normalmente de fotones (producidos po bremhstralung) pero también de electrones y hadrones, acelerados por campos eléctricos)
 :::
 
 ## Brachytherapy modalities {auto-animate="true"}
@@ -53,13 +54,9 @@ Low-Dose Rate (LDR)
 Pulsed-Dose Rate (PDR)
 
 ::: notes
-High-Dose Rate (HDR) Brachytherapy:
-
-Energy: HDR brachytherapy uses high-energy radioactive sources, such as iridium-192 or cobalt-60. Rate: HDR brachytherapy delivers a high dose of radiation over a short period, typically in fractions given at multiple treatment sessions. The radioactive sources are temporarily placed inside the body using applicators or catheters, and a computer-controlled machine called an afterloader moves the sources to the treatment area. Low-Dose Rate (LDR) Brachytherapy:
-
-Energy: LDR brachytherapy employs low-energy radioactive sources, usually in the form of radioactive seeds or pellets, such as iodine-125 or palladium-103. Rate: LDR brachytherapy delivers a continuous low dose of radiation over an extended period. The radioactive sources are permanently or semi-permanently implanted in or near the tumor site. Over time, the radiation emitted by the sources gradually decreases, providing a prolonged but low-dose treatment. Pulsed-Dose Rate (PDR) Brachytherapy:
-
-Energy: PDR brachytherapy uses radioactive sources with intermediate energy levels, similar to HDR brachytherapy. Common isotopes used include iridium-192 or cesium-137. Rate: PDR brachytherapy delivers radiation in pulses or intervals. The sources are temporarily placed inside the body, and the treatment is administered using an afterloader machine that controls the timing and duration of the radiation pulses. The pulses allow for periods of radiation delivery and intervals for normal tissue recovery.
+HDR Lo que nos ocupa
+LDR: Semillas de I o Pd (implantes permanentes)
+PDR alta energía pero baja tasa
 :::
 
 ## Brachytherapy modalities {auto-animate="true"}
@@ -89,7 +86,7 @@ Gynecological
 :::
 
 ::: notes
-Notes
+Hacer notar la parada de la fuente en los diferentes puntos
 :::
 
 ## Source Positions
@@ -97,15 +94,21 @@ Notes
 ![](img/PosicionesParada.jpg)
 
 ::: notes
-Notes
+Principio de superposición (hablar de los tiempos de parada)
 :::
 
 ## Dose distribution
 
+::: {layout-ncol=2}
+
 ![](img/DoseDistribution.png)
 
+![](img/Animation2Positions.gif)
+
+:::
+
 ::: notes
-Notes
+Sumando la dosis en cada punto conseguimos la isodosis que envuelve al tumor. Hacer notar que la dosis dentro del tumor no es homogenea (ley del cuadrado de la distancia)
 :::
 
 ## Differences between intracavitary and interstitial brachytherapy
@@ -122,7 +125,7 @@ Notes
 :::
 
 ::: notes
-Notes
+Hablar de que puede estar mezclado (y de hecho es lo que se usa para los casos de cervix avanzados)
 :::
 
 
@@ -169,15 +172,7 @@ Head and Neck
 Ophthalmic
 
 ::: notes
-Prostate : This is one of the most common applications of brachytherapy. It involves the placement of tiny radioactive seeds directly into the prostate gland. The procedure is typically performed in an operating room or an outpatient clinic.
-
-Gynecological : Brachytherapy can be used to treat gynecological cancers such as cervical, endometrial, or vaginal cancer. The treatment may involve the placement of radioactive sources directly into the vagina (intravaginal brachytherapy) or into the uterus (intracavitary brachytherapy). These procedures are usually performed in a radiation oncology department.
-
-Breast : In some cases of early-stage breast cancer, brachytherapy may be used as an alternative to whole-breast radiation therapy. It involves the insertion of catheters or a specialized device with radioactive sources into the breast tissue. The treatment is typically performed in a radiation oncology department.
-
-Head and Neck : Brachytherapy can be utilized to treat certain head and neck cancers, such as tongue or oral cavity cancers. It involves the placement of radioactive sources directly into the tumor or the surgical cavity. The procedure is generally performed in a radiation oncology department or an operating room.
-
-Ophthalmic : Brachytherapy can be used to treat certain ocular tumors, such as choroidal melanoma. Radioactive plaques or seeds are surgically implanted on the sclera (white part of the eye) near the tumor. The treatment is typically performed in a specialized eye clinic or hospital.
+Notes
 :::
 
 ## Commons Locations {auto-animate="true"}
@@ -202,7 +197,9 @@ Notes
 - Deformable registration
 
 ::: notes
-Notes
+El registro rígido es una transformación afín entre los dos orígenes de las secuencias de imágenes
+El deformable es además definir una métrica que recoja la deformación de una imagen respecto a la otra.
+Deformation model:These models capture the local deformations and shape variations observed between the images.
 :::
 
 
@@ -236,6 +233,10 @@ Cervical Cancer
 ![](img/MRIMandatory.png)
 :::
 
+::: notes
+Recomiendan la MRI para la delineación de tumores y órganos de riesgo. En el caso del cervix es crucial para el tumor
+:::
+
 ## MRI vs CT: Cervix
 
 ::: {layout-ncol=2}
@@ -256,6 +257,9 @@ Cervical Cancer
 
 :::
 
+::: notes
+Volver a comentar la solución del registro vs reconstrucción directa. Hay que recordar que la adquisición de imágenes no se hace en el mismo lugar ni al mismo tiempo.
+:::
 
 # Reconstruction in Brachytherapy
 
@@ -280,7 +284,7 @@ Notes
 - Most distal position as origin of l parameter.
 
 ::: notes
-Notes
+Buscar una transformación que ligue la posición de la fuente a través del parámetro l (thread lenght)
 :::
 
 ## Impact on dose distribution
@@ -308,7 +312,7 @@ Systematic errors of a few millimetres can lead to significant deviations (More 
 :::
 
 ::: notes
-Notes
+Incidir en la importancia de la reconstrucción de los aplicadores
 :::
 
 
@@ -327,7 +331,7 @@ The most distal stopping position (tip position) and the trajectory of the sourc
 - Slice thickness 
 
 ::: notes
-Notes
+Hablar de pros y contras
 :::
 
 ## Dummies CT
@@ -341,16 +345,39 @@ Notes
 
 :::
 
+::: notes
+Hechas de materiales de Z alto
+Son muy habituales y están codificadas para ver el primer punto de parada. Dificultad de cuando se cruzan dummies de varios canales y el artefacto a ser materiales de Z alto. 
+:::
+
 ## Dummies MRI
 
 ::: {layout-ncol="2"}
-![](img/DummiesMR_Image.jpg)
 
-![](img/DummiesMR.png)
-:::
+
+::: {layout-nrow="2"}
+
+![](img/DummiesMR_Image.jpg)
 
 ::: {.callout-caution}
 There are no commercial dummies for MRI compatible needles.
+:::
+
+:::
+
+::: {layout-nrow="2"}
+
+![](img/DummiesMR.png){width="50%"}
+
+![](img/DummiesPepe.png){width="50%"}
+
+:::
+
+:::
+
+::: notes
+Hechas de materiales con "hidrógenos"(Por la resonancia)
+Al ser líquidos, problemas de contrucción. De ahí la dificultad para las agujas.
 :::
 
 ## Applicator Libraries (AP)
@@ -360,7 +387,7 @@ There are no commercial dummies for MRI compatible needles.
 ![](img/AppLUtrecht.png){width="70%"}
 
 ::: notes
-Notes
+Hablar de que son modelos 3D detallados y que por tanto si tenemos referencias de los mismos no necesitamos conocer los canales ni el primer punto de parada
 :::
 
 
@@ -374,7 +401,8 @@ since there is a risk that the position of the applicators in relation
 to each other could change inside the patient.</q>
 
 ::: notes
-Notes
+Poner el ejemplo del aplicador Utrecht que está hecho de tres bloques
+No se contemplan las agujas
 :::
 
 ## Plastic applicators
@@ -402,7 +430,7 @@ Notes
 :::
 
 ::: notes
-Notes
+Los canales de titanio apantallan las dummies
 :::
 
 ## Artifacts
@@ -411,7 +439,7 @@ Notes
 
 
 ::: notes
-Notes
+Hacer notar la dificultad de definir la punta. En las recomendaciones del paper anterior aconseja y al centro de la "bomba"
 :::
 
 # Contributions
@@ -430,6 +458,11 @@ Notes
 
 ![](img/JCB2017_2.jpg){width="100%"}
 ![](img/JCB2017_4.png){width="100%"}
+![](img/Regla.png){width="50%"}
+:::
+
+::: notes
+Se añadieron las agujas y se usa el free-lenght. Del aplicador Benidorm hablamos en el pre-plan
 :::
 
 ## Journal of Comtemporary Brachytherapy (2017 vol 2)
@@ -445,6 +478,11 @@ Notes
 
 
 ![](img/JCB2017_pp_2.jpg){width="100%"}
+:::
+
+::: notes
+El objetivo es hacer una dosimetría virtual para ver qué agujas se necesitan para cubrir el tumor
+Se hace una resonancia solamente con el cilindro para planificar las agujas y con una herramienta en java se compone el modelo
 :::
 
 ## ALFIM2016
@@ -470,7 +508,7 @@ Notes
 
 
 ::: notes
-Notes
+Hablar de las bolas de Auxina. Que ya se usaron en el template Benidorm
 :::
 
 
@@ -495,7 +533,7 @@ ImagenEntrada.show()
 
 
 ::: notes
-Notes
+Premio en Argentina
 :::
 
 
@@ -541,7 +579,7 @@ ImagenEntrada.show()
 :::
 
 ::: notes
-Notes
+Explicar el intento de parametrizar el aplicador para convertirlo en rígido. Volver sobre el concepto de semirígidos.
 :::
 
 ## ABS2021
