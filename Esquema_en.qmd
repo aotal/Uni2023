@@ -557,7 +557,7 @@ ImagenEntrada.show()
 :::
 
 ::: notes
-Notes
+Explicar el intento de parametrizar el aplicador para convertirlo en rígido. Volver sobre el concepto de semirígidos.
 :::
 
 ## AAPM2019
@@ -579,7 +579,7 @@ ImagenEntrada.show()
 :::
 
 ::: notes
-Explicar el intento de parametrizar el aplicador para convertirlo en rígido. Volver sobre el concepto de semirígidos.
+Hablar de como al dejar la clínica comencé a trabajar con 3DSlicer por no tener un TPS
 :::
 
 ## ABS2021
@@ -589,7 +589,7 @@ A novel tool for the reconstruction of the Utrecht applicator on MRI
 {{< video https://www.youtube.com/embed/kv827vIsAZM?&start=197&autoplay=1&playlist=kv827vIsAZM&loop=0&mute=1&hl=en&answer=140174 width="800" height="448" aspect-ratio="16x9" >}}
 
 ::: notes
-Notes
+Hablar a futuro de intentar utilizar la AI para automatizar completamente el proceso y obviar la parte de ajustar la parte intracavitaria
 :::
 
 # 
